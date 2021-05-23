@@ -41,11 +41,12 @@ test:
 
 about:
   home: http://www.rforge.net/fasttime
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Fast functions for timestamp manipulation that avoid system calls and take shortcuts
     to facilitate operations on very large data.
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
